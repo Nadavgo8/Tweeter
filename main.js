@@ -17,3 +17,10 @@ console.log(tweeter.getPosts());
 // Remove a comment
 tweeter.removeComment("p2", "c6");
 console.log(tweeter.getPosts());
+
+import Renderer from "./render.js";
+
+const renderer = Renderer();
+
+// This should render the initial dummy data
+renderer.renderPosts(tweeter.getPosts());
